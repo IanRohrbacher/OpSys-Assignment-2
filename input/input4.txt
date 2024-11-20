@@ -1,0 +1,15 @@
+n=6
+m=3
+availableResource={10,8,18}
+allocation0={0,1,0}
+maxAllocation0={7,5,3}
+allocation1={2,0,0}
+maxAllocation1={4,2,2}
+allocation2={3,0,2}
+maxAllocation2={9,0,2}
+allocation3={2,1,1}
+maxAllocation3={2,2,2}
+allocation4={0,0,2}
+maxAllocation4={4,3,3}
+allocation5={1,2,5}
+maxAllocation5={2,5,8}

@@ -9,36 +9,48 @@
 ###############################################################
 msg:
 	@echo 'Targets are:'
-	@echo 'make run 	- Compiles main then outputs main.o'
-	@echo 'make clean	- removes all .o files'
+	@echo 'ARGS= make run 	- Compiles main with inputed ARGS, text file name within the input folder, then outputs main.o'
+	@echo 'make runDefult 	- Compiles main with the defult text files found within the input folder then outputs main.o'
+	@echo 'make clean		- removes all .o files'
 
 ###############################################################
 # Variables
 #
 CXX = g++
-CXXFLAGS = -std=c++11
+CXXFLAGS = -std=c++11 -Wall
 TARGETS = main
+SOURCES = main.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
+DEFULTARGS = input1.txt input2.txt input3.txt input4.txt
 
 #####################################################
 # Used when running 'run' command
 #
-$(TARGETS): $(TARGETS).o
-	$(CXX) $(CXXFLAGS) -o $(TARGETS) $(TARGETS).o
+all: $(TARGETS)
 
-$(TARGETS).o: $(TARGETS).cpp
-	$(CXX) $(CXXFLAGS) -c $(TARGETS).cpp
+$(TARGETS): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $<
 
 
 #####################################################
 # Compiles and outputs main
 #
+runDefult: $(TARGETS)
+	./$(TARGETS) $(DEFULTARGS) 
+
+#####################################################
+# Compiles and outputs main
+#
 run: $(TARGETS)
-	./$(TARGETS)& 
+	./$(TARGETS) $(ARGS) 
 
 #####################################################
 # Removes all .o files
 #
 clean:
-	rm -f *.o $(TARGETS)
+	rm -f $(OBJECTS) $(TARGET)
 
 #####################################################

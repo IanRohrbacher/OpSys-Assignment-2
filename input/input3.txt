@@ -1,0 +1,9 @@
+n=3
+m=1
+availableResource={11}
+allocation0={5}
+maxAllocation0={7}
+allocation1={2}
+maxAllocation1={3}
+allocation2={3}
+maxAllocation2={9}

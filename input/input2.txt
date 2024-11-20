@@ -1,0 +1,17 @@
+n=7
+m=4
+availableResource={10,8,18,9}
+allocation0={0,1,0,4}
+maxAllocation0={7,5,3,5}
+allocation1={2,0,0,1}
+maxAllocation1={4,2,2,3}
+allocation2={3,0,2,0}
+maxAllocation2={9,0,2,0}
+allocation3={2,1,1,0}
+maxAllocation3={2,2,2,2}
+allocation4={0,0,2,2}
+maxAllocation4={4,3,3,4}
+allocation5={1,2,5,0}
+maxAllocation5={2,5,8,2}
+allocation6={1,2,5,0}
+maxAllocation6={2,5,8,6}

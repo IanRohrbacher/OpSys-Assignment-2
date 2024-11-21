@@ -25,13 +25,13 @@ This code takes input from a txt file and produces if the system is in a safe st
 Copy files onto a Linux/Unix machine with C/C++ installed.
 
 ### Running
-**DO NOT remove files from the input folder! You can add your own but it must follow a format defined in Features**
+**DO NOT remove files from the input folder! You can add your own, but it must follow a format defined in Features**
 - To run the program with the example txt files use 'make runDefult'.
-- To run costom input.txt files use 'ARGS=filename.txt make run'.
+- To run custom input.txt files use 'ARGS=filename.txt make run'.
 - To clear .o files use 'make clear'
   
 ## Features
-This file takes input from files found within the input folder. To create your own input file you must follow the format below
+This file takes input from files found within the input folder. To create your own input file, you must follow the format below
 - file must be a .txt
 - line one - 'n=number'
 - line two - 'm=number'

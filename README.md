@@ -25,7 +25,8 @@ This code takes input from a txt file and produces if the system is in a safe st
 Copy files onto a Linux/Unix machine with C/C++ installed.
 
 ### Running
-**DO NOT remove files from the input folder! You can add your own, but it must follow a format defined in Features**
+> [!WARNING]
+> **DO NOT remove files from the input folder! You can add your own, but it must follow a format defined in Features**
 - To run the program with the example txt files use 'make runDefult'.
 - To run custom input.txt files use 'ARGS=filename.txt make run'.
 - To clear .o files use 'make clear'
